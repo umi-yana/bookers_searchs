@@ -36,6 +36,10 @@
  <% flash.each do |message_type, message| %>
     <%= content_tag :div, message, class: message_type %>
     <% end %>
+    
+  <!--検索窓の作成-->
+  <%= render 'searchs/search' %>
+    
     <%= yield %>
     
     

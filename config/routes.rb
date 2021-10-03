@@ -16,5 +16,8 @@ Rails.application.routes.draw do
   end
   
     resources :books
+    
+    
+    get '/search' => 'searchs#search'
   
 end
